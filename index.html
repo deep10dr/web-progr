@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/1049/1049443.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loadingclass" id="loadingClass">
+        <img src="wifi.png" alt="Loading" id="LoadingImage">
+        <div class="outer-load">
+            <div class="inner-load"></div>
+        </div>
+        <h2>Connecting..</h2>
+    </div>
+
+    <script>
+        window.onload = () => {
+            const loadingClass = document.getElementById('loadingClass');
+            loadingClass.style.visibility = 'visible'; 
+            setTimeout(() => {
+                loadingClass.style.visibility = 'hidden'; 
+
+            }, 3000); 
+        };
+    </script>
+    <h1 style="text-transform: uppercase
+    ; font-size: 30px; text-align: center; margin-top: 10px; color: white; ">Seasons</h1>
+    <h3>The four main seasons are spring, summer, autumn, and winter. However, some regions have different numbers of seasons, or may even have half-seasons. For example, in India, the four seasons are:</h3>
+      <table>
+        <tr><th>Seasons</th>
+        <th>Description</th></tr>
+        <tr><td> <a href="https://en.wikipedia.org/wiki/Winter">Winter</a></td><td> December to February, with cooler temperatures<img src="https://cdn-icons-png.flaticon.com/128/12895/12895888.png"></td></tr>
+        <tr><td><a href="https://en.wikipedia.org/wiki/Summer">Summer</a></td><td>March to May, with hot temperatures<img src="https://cdn-icons-png.flaticon.com/128/2984/2984156.png"></td></tr>
+        <tr><td><a href="https://en.wikipedia.org/wiki/Rain">Rainy</a> </td><td>June to September, with refreshing showers<img src="https://cdn-icons-png.flaticon.com/128/8907/8907538.png"></td></tr>
+        <tr><td><a href="https://en.wikipedia.org/wiki/Autumn">Autumn</a></td><td>October and November, with comfortable temperatures and clear skies <img src="https://cdn-icons-png.flaticon.com/128/3351/3351915.png">
+        </td></tr>
+        
+      </table>
+      <h3>Seasons are caused by Earth's tilt on its axis relative to the orbital plane. This tilt means that the seasons in the Northern Hemisphere are opposite to those in the Southern Hemisphere. </h3>
+</body>
+
+
+</html>
